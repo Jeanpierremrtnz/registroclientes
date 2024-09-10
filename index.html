@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6677e4, #2575fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus {
+            outline: none;
+            border: 2px solid #9a55e4;
+        }
+        input[type="submit"] {
+            background-color: #9c59df;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Clientes</h2>
+        <form>
+            <label for="cedula">Cédula</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
+
